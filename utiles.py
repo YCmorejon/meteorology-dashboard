@@ -46,20 +46,3 @@ class BuscadorLocalizaciones:
         
         return resultados
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    buscador = BuscadorLocalizaciones("miami")
-    
-    if buscador.obtener_respuesta():
-        resultados = buscador.obtener_datos()
-        
-        if resultados:
-            print(f"Se encontraron {len(resultados)} resultados para 'Florida':")
-            for i, res in enumerate(resultados):
-                print(f"\nOpción {i}:")
-                print(f"Nombre: {res['nombre']}")
-                print(f"URL: {res['url']}")
-        else:
-            print("No se encontraron resultados.")
-    else:
-        print("Error al obtener los datos del servidor.")
