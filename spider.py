@@ -43,6 +43,7 @@ def extraer_datos(html: str) -> dict:
 
     return {
         "temperatura": temperatura,
+        "sensacion_termica": valores[0] if len(valores) > 0 else None,
         "viento": valores[0] if len(valores) > 0 else None,
         "rafagas": valores[1] if len(valores) > 1 else None,
         "calidad_viento": valores[2] if len(valores) > 2 else None,
@@ -52,8 +53,9 @@ def extraer_datos(html: str) -> dict:
 if __name__ == "__main__":
     html = obtener_html_localizacion("miami")
     datos = extraer_datos(html)
-
+    
     print("Temperatura:", datos["temperatura"])
+    print("Sensación Térmica:", datos["sensacion_termica"])
     print("Viento:", datos["viento"])
     print("Ráfagas:", datos["rafagas"])
     print("Calidad del viento:", datos["calidad_viento"])
