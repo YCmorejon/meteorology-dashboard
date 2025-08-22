@@ -26,7 +26,10 @@ def extraer_datos(html: str) -> dict:
     tree = HTMLParser(html)
 
     # Temperatura principal
-    temperatura = tree.css_first("div.temp").text().strip()
+    try:
+        temperatura = tree.css_first("div.temp").text().strip()
+    except Exception as e:
+        print("No se pudo obtener la temperatura")
 
     # Otros valores (sensación real, viento, ráfagas...)
     valores = []
