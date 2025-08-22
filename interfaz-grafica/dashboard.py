@@ -30,7 +30,7 @@ with col2:
     st.metric(label="☁️ Nubes", value="60%")
  
 
-# Estilo adicional
+# Estilo adicional.
 st.markdown(
     """
     <style>
