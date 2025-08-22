@@ -7,8 +7,8 @@ st.set_page_config(page_title="Aplicación Meteorológica", page_icon="⛅",layo
 dashboard_page = st.Page("dashboard.py", title="Dashboard", icon="📊")
 informe_page = st.Page("informe.py", title="Generar Informe", icon="📝")
 
-# Set up navigation
+# Creando navegación
 nav = st.navigation([dashboard_page, informe_page])
 
-# Run the selected page
+# Corriendo navegación
 nav.run()
