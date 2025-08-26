@@ -1,4 +1,3 @@
----
 
 # 🌦️ Aplicación Web de Meteorología con Búsqueda Inteligente
 
@@ -81,3 +80,4 @@ Si te gusta el proyecto ⭐ ¡no olvides dejar una estrella en el repositorio!
 ---
 
 👉 ¿Quieres que lo adapte para que sea un **README listo para GitHub**, con emojis, badges (por ejemplo Python/Streamlit) y ejemplos de uso, o prefieres dejarlo más **formal y limpio**?
+
