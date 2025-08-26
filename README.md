@@ -1,3 +1,4 @@
+Perfecto 🚀 Te preparo un **README profesional** para tu proyecto en **Streamlit (app de meteorología con búsqueda y sugerencias)**.
 
 # 🌦️ Aplicación Web de Meteorología con Búsqueda Inteligente
 
@@ -75,9 +76,5 @@ Incluye una barra de búsqueda con sistema de sugerencias inteligentes, que perm
 * Sistema de historial de búsquedas.
 * Posibilidad de guardar ubicaciones favoritas.
 
-Si te gusta el proyecto ⭐ ¡no olvides dejar una estrella en el repositorio!
-
----
 
 👉 ¿Quieres que lo adapte para que sea un **README listo para GitHub**, con emojis, badges (por ejemplo Python/Streamlit) y ejemplos de uso, o prefieres dejarlo más **formal y limpio**?
-
