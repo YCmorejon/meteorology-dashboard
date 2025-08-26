@@ -58,7 +58,7 @@ La interfaz se diseñó con un enfoque en **simplicidad y claridad**, priorizand
 
 * ✅ Mejorar la precisión de los resultados meteorológicos.
 * ⌨️ Implementar sugerencias automáticas en la barra de búsqueda.
-* 📈 Añadir más métricas climáticas (ej. presión, humedad, viento).
+* 📈 Añadir más métricas climáticas .
 * 🗺️ Visualización de ubicaciones en mapas interactivos.
 
 ---
@@ -70,3 +70,4 @@ Este proyecto está en desarrollo y se irá ampliando progresivamente. El enfoqu
 
 
 ¿Quieres que lo prepare también con un **toque visual adicional** (por ejemplo, usando un logo ASCII o badges de GitHub como *made with Python*, *Streamlit app*, etc.) para que tu repositorio se vea aún más profesional?
+
