@@ -6,15 +6,12 @@ from spider import obtener_html_localizacion,extraer_datos
 
 # Iniciando datos y almacenandolos en la session_state
 if "datos" not in st.session_state:
-    st.session_state.datos = {
-        "clima": "N/A",
-        "temperatura": "N/A",
-        "viento": "N/A",
-        "sensacion_termica": "N/A",
-        "rafagas": "N/A",
-        "calidad_viento": "N/A"
-    }
-
+    with st.spinner("Iniciando..."):
+        html = obtener_html_localizacion("miami")
+        st.session_state.datos = extraer_datos(html)
+        # Mostrar las claves disponibles en el diccionario
+        st.markdown(f"<h1 style='text-align: left; color: #1E90FF;'>Tiempo</h1>", unsafe_allow_html=True)
+        st.markdown(f"<h3 style='text-align: left; color: #FFA500;'>Miami</h3>", unsafe_allow_html=True)
 
 # Barra de búsqueda
 col1, col2 = st.columns([4,1])  # Una columna más grande para el input
@@ -23,7 +20,16 @@ with col1:
 with col2:
     buscar = st.button("🔍", use_container_width=True)
     
-    
+with st.container():
+    if "datos" not in st.session_state:
+        with st.spinner("Buscando..."):
+            html = obtener_html_localizacion(ubicacion)
+            st.session_state.datos = extraer_datos(html)
+            # Mostrar las claves disponibles en el diccionario
+            st.markdown(f"<h1 style='text-align: left; color: #1E90FF;'>Tiempo</h1>", unsafe_allow_html=True)
+            st.markdown(f"<h3 style='text-align: left; color: #FFA500;'>{ubicacion.capitalize()}</h3>", unsafe_allow_html=True)
+
+        
 # Obteniendo los datos meteorológicos
 with st.container():
     if buscar:
